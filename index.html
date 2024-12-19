@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Search App</h1>
+        
+        <select id="genre-filter">
+            <option value="">All Genres</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <!-- Add more genres as needed -->
+        </select>
+
+        <!-- Search Box for Movies -->
+        <input type="text" id="search-box" placeholder="Search for movies...">
+        <button id="search-btn">Search</button>
+
+        <!-- Genre Filter (Optional) -->
+        <!-- Movies Display -->
+        <div id="movie-list"></div>
+
+        <!-- Favorite Movies Section -->
+        <h2>Favorite Movies</h2>
+
+        <!-- Search Box for Favorite Movies -->
+        <input type="text" id="favorite-search-box" placeholder="Search favorites by name...">
+        <button id="favorite-search-btn">Search Favorites</button>
+
+        <!-- Favorites List -->
+        <ul id="favorites-list"></ul>
+    </div>
+
+    <div id="notification-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

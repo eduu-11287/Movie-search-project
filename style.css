@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container h1 {
+    text-decoration: underline;
+    color: red;
+    font-size: 90px;
+    font-style: oblique;
+
+}
+
+.container h2 {
+    text-decoration: underline;
+    color: red;
+    font-size: 40px;
+    font-style: italic;
+
+}
+
+#search-box {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 25px; /* Round edges for the search box */
+    border: 1px solid #ccc; /* Optional: adds a light border around the search box */
+}
+
+
+#search-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 25px; /* Round edges for the search button */
+}
+
+#search-btn:hover {
+    background-color: #0056b3; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+#genre-filter {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 25px; /* Round edges for the genre filter */
+    border: 1px solid #ccc; /* Optional border around the genre filter */
+}
+
+
+#movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.movie-buttons-container {
+    display: flex;
+    gap: 5px; /* Adds a gap between the buttons */
+}
+.movie-card button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.movie-card button:hover{
+    background-color: #0056b3; /* Change background color on hover */
+    transform: scale(1.05);
+}
+
+#favorites-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#favorites-list li {
+    padding: 10px;
+    background-color: #f1f1f1;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* Align the buttons properly */
+}
+
+#favorites-list li button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#favorite-search-box {
+    padding: 8px;
+    margin-bottom: 15px; /* Gap between the search box and button */
+    width: 50%; /* Smaller width */
+    margin-top: 20px;
+    font-size: 14px; /* Smaller font size */
+    border-radius: 25px; /* Round edges for the favorite search box */
+    border: 1px solid #ccc; /* Optional border around the favorite search box */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the input horizontally */
+}
+
+#favorite-search-btn {
+    gap: 1em;
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer;
+    background-color: #FF5722; /* Customize the color of the button */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Round edges for the favorite search button */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the button horizontally */
+}
+
+#favorite-search-btn:hover {
+    background-color: #d84f14; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+#notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.notification {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    animation: fadeInOut 3s ease-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
